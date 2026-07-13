@@ -1,0 +1,16 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':domain')
+    implementation project(':infra')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Test-scope only: lets the context-load test run without a local Postgres/Docker setup.
+    // Runtime/dev database is still PostgreSQL per docker-compose.yml.
+    testRuntimeOnly 'com.h2database:h2'
+}
