@@ -69,6 +69,10 @@ public class PolicyDocument extends BaseTimeEntity {
         this.status = PolicyLifecycleStatus.REVIEWING;
     }
 
+    public void markEditing() {
+        this.status = PolicyLifecycleStatus.EDITING;
+    }
+
     public void markFailed() {
         this.status = PolicyLifecycleStatus.FAILED;
     }
