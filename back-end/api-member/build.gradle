@@ -1,8 +1,0 @@
-// No Spring Boot plugin yet: no controllers exist in this module (PRD scope is admin-only
-// for now, see .claude/docs/prd/09-future-auth-sso.md), so there's no main class to package
-// into a bootJar. Add the plugin when the first member-facing controller lands here.
-dependencies {
-    implementation project(':core')
-    implementation project(':domain')
-    implementation project(':infra')
-}

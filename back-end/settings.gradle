@@ -4,4 +4,4 @@ plugins {
 
 rootProject.name = 'chat-ai-backend'
 
-include 'core', 'domain', 'infra', 'api-admin', 'api-member'
+include 'core', 'domain', 'infra', 'api-admin', 'api-user'

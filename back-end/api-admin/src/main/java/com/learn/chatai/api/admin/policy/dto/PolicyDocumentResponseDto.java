@@ -2,7 +2,7 @@ package com.learn.chatai.api.admin.policy.dto;
 
 import com.learn.chatai.domain.policy.entity.PolicyDocument;
 import com.learn.chatai.domain.policy.entity.PolicyTextRevision;
-import com.learn.chatai.domain.policy.service.PolicyIngestionService.PolicyDocumentDetail;
+import com.learn.chatai.api.admin.policy.PolicyAdminService.PolicyDocumentDetail;
 
 import java.time.LocalDateTime;
 

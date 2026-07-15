@@ -9,6 +9,7 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
 
     // Test-scope only: lets the context-load test run without a local Postgres/Docker setup.
     // Runtime/dev database is still PostgreSQL per docker-compose.yml.

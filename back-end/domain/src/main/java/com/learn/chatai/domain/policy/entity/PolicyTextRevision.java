@@ -59,4 +59,9 @@ public class PolicyTextRevision extends BaseTimeEntity {
         return new PolicyTextRevision(revisionId, documentId, PolicyTextRevisionType.EXTRACTED,
                 content, extractedPageCount, extractedCharacterCount);
     }
+
+    public static PolicyTextRevision edited(String revisionId, String documentId, String content) {
+        return new PolicyTextRevision(revisionId, documentId, PolicyTextRevisionType.EDITED,
+                content, null, null);
+    }
 }

@@ -8,18 +8,18 @@ import java.util.UUID;
  * Formats the human-traceable IDs required by root CLAUDE.md's Policy Code System
  * (e.g. {@code POLICY-DOC-20260710-A1B2C3D4}).
  */
-final class PolicyIdGenerator {
+public final class PolicyIdGenerator {
 
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyyMMdd");
 
     private PolicyIdGenerator() {
     }
 
-    static String newDocumentId() {
+    public static String newDocumentId() {
         return "POLICY-DOC-%s-%s".formatted(today(), shortId());
     }
 
-    static String newRevisionId(String documentId) {
+    public static String newRevisionId(String documentId) {
         return "REVISION-%s-%s".formatted(documentId, shortId());
     }
 
